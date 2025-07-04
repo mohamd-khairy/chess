@@ -2,11 +2,21 @@
     "name": "laravel/laravel",
     "type": "project",
     "description": "The skeleton application for the Laravel framework.",
-    "keywords": ["laravel", "framework"],
+    "keywords": [
+        "laravel",
+        "framework"
+    ],
     "license": "MIT",
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../migration-model-sync"
+        }
+    ],
     "require": {
         "php": "^8.2",
         "khairy/laravel-sse-stream": "^2.0",
+        "khairy/migration-model-sync": "@dev",
         "laravel/framework": "^11.9",
         "laravel/tinker": "^2.9",
         "laravel/ui": "^4.5",
@@ -28,7 +38,7 @@
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/"
         },
-        "files" : [
+        "files": [
             "app/Helpers/app.php"
         ]
     },

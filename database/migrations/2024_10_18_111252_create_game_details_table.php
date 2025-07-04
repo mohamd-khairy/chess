@@ -60,7 +60,7 @@ return new class extends Migration
             $table->string('queen_white')->nullable();
 
             $table->unsignedBigInteger('should_play')->nullable();
-
+            $table->foreign('should_play')->references('id')->on('users');
             $table->timestamps();
         });
     }
