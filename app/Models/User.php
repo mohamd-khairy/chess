@@ -15,12 +15,6 @@ class User extends Authenticatable
         'email',
         'email_verified_at',
         'password',
-        'token',
-        'id',
-        'user_id',
-        'user_agent',
-        'payload',
-        'last_activity'
     ];
 
     protected $casts = [

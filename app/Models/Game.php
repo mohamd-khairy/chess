@@ -33,4 +33,9 @@ class Game extends Model
         return $this->belongsTo(\App\Models\User::class, 'winner_id', 'id');
     }
 
+    public function gameDetails()
+    {
+        return $this->hasMany(GameDetail::class);
+    }
+
 }
